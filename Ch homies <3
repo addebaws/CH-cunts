@@ -1,0 +1,169 @@
+#include <iostream>
+#include <windows.h>
+#include <shellapi.h>
+
+
+using namespace std;
+
+int main()
+{
+    !SetConsoleTitle("Addes Script");
+          system("color 3");
+label:
+    cout << "(1) Test\n(2)Calculator\n(3)Age script\n(4)Potato\n(5)Jontes choice\n(6)Exit\nSelect one ^\n";
+    string input;
+    cin >> input;
+    if(input == "1")
+    {
+        int karola;
+        cout <<"Addes test!" << endl;
+        cout <<"I love milk so so much" << endl;
+        cout <<"That is very true!" << endl;
+        Sleep(2000);
+        system("cls");
+        cout <<"Would you like to know something?";
+        cin >>karola;
+        cout <<"I suck at chords";
+        Sleep(4000);
+        system("cls");
+        goto label;
+    }
+    if(input == "2")
+    {
+        char op;
+        float num1, num2;
+        cout << "Enter operator either + or - or * or /: ";
+        cin >> op;
+        cout << "Enter two operands: ";
+        cin >> num1 >> num2;
+        switch(op)
+        {
+            case '+':
+            cout << num1+num2;
+            break;
+            case '-':
+            cout << num1-num2;
+            break;
+            case '*':
+            cout << num1*num2;
+            break;
+            case '/':
+            cout << num1/num2;
+            break;
+            default:
+            cout << "Error! operator is not correct";
+            break;
+        }
+    }
+
+        if(input == "3")
+        {
+            int age;
+            cout<<"How old are you?: ";
+            cin>> age;
+            cin.ignore();
+            if ( age < 22 )
+            {
+                cout<<"Young man!\n";
+                Sleep(1000);
+                system("cls");
+                goto label;
+            }
+            if ( age > 22 )
+            {
+	            cout<<"Old man!\n";
+	            Sleep(1000);
+	            system("cls");
+                goto label;
+	        }
+		    if ( age == 22)
+            {
+        	    cout<<"YaYeet";
+        	    Sleep(1000);
+        	    system("cls");
+                goto label;
+	        }
+	        cin.get();
+		}
+		if(input == "4")
+        {
+            int potato;
+            cout<<"How many potatoes do you want to see?\n";
+            cin>> potato;
+            if (potato < 5)
+            {
+                cout<<"Here's\n"; cout<< potato; cout<< "\npotatoes for you!";
+                Sleep(1000);
+            }
+                if(potato == 1)
+                {
+                    ShellExecute(0, 0, "https://www.thespruceeats.com/thmb/Q8B3Jz9VpEMrUflmen2xqLxBCws=/3396x1910/smart/filters:no_upscale()/baked-potatoes-stuffed-chives-5b05c30c8e1b6e0036bc7fe4.jpg", 0, 0 , SW_SHOW );
+                    Sleep(1000);
+                system("cls");
+                goto label;
+                }
+                if(potato == 2)
+                {
+                    ShellExecute(0, 0, "https://www.gimmesomeoven.com/wp-content/uploads/2016/03/How-To-Make-A-Baked-Potato-Recipe-5.jpg", 0, 0, SW_SHOW);
+                    Sleep(1000);
+                system("cls");
+                goto label;
+                }
+                if(potato == 3)
+                {
+                    ShellExecute(0, 0, "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgrFFcDnThrGY3uXQqs5xx7w90UVR9uGEjmxxwKGIsjJI0W_Ki", 0, 0, SW_SHOW);
+                    Sleep(1000);
+                system("cls");
+                goto label;
+                }
+                if(potato ==4)
+                {
+                    ShellExecute(0, 0, "https://hips.hearstapps.com/hmg-prod/images/delish-baked-potatoes-horizontal-1532986298.png", 0, 0, SW_SHOW);
+                    Sleep(1000);
+                system("cls");
+                goto label;
+                }
+                if(potato >4)
+                {
+                    cout<<"You know what, have them all..";
+                    ShellExecute(0, 0, "https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/1505/2016/03/14222743/10508674534_f172a01259_k-1.jpg",0 ,0, SW_SHOW);
+                    Sleep(1000);
+                system("cls");
+                goto label;
+                }
+
+        }
+                        if(input == "5")
+                {
+            cout<<"This option is supposed to be a secret, i'll send you back";
+            Sleep(2000);
+            system("cls");
+            goto label;
+                }
+        if(input == "6")
+        {
+            cout<<"Bye!";
+            exit(0);
+        }
+
+
+		if(input > "6")
+		{
+		    {
+            cout << "Wtf invalid input\n";
+			Sleep(1000);
+                system("cls");
+                goto label;
+		    }
+
+		}
+				if(input < "1")
+		{
+			cout << "Wtf invalid input\n";
+			Sleep(1000);
+                system("cls");
+                goto label;
+		}
+
+
+}
