@@ -15,14 +15,14 @@ label:
     cin >> input;
     if(input == "1")
     {
-        int karola;
+        int Quadz;
         cout <<"Addes test!" << endl;
         cout <<"I love milk so so much" << endl;
         cout <<"That is very true!" << endl;
         Sleep(2000);
         system("cls");
         cout <<"Would you like to know something?";
-        cin >>karola;
+        cin >>Quadz;
         cout <<"I suck at chords";
         Sleep(4000);
         system("cls");
